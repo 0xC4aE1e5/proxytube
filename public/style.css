@@ -1,0 +1,21 @@
+@font-face {
+  font-family: mononoki;
+  src: url("font/mononoki-Regular.ttf");
+}
+
+* {
+  font-family: mononoki;
+}
+
+input {
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: gray;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: lightgray;
+  color: black;
+  border-radius: 4px;
+}

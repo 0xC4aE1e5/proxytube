@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxytube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Proxytube</h1>
+    <p>Proxytube is a frontend to YouTube.</p>
+    <form
+      action="watch"
+      onsubmit="let x = document.querySelector('#v'); x.value = x.value.startsWith('http') ? x.value.slice(x.value.length - 11) : x.value; return true;"
+    >
+      <input type="text" name="v" id="v" placeholder="Video URL" />
+      <input type="submit" value="Watch" />
+    </form>
+  </body>
+</html>
